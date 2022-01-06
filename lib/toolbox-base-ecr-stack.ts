@@ -6,6 +6,6 @@ export class ToolboxBaseEcrStack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
       super(scope, id, props);
   
-      new Repository(this, 'ToolboxBase');
+      new Repository(this, 'ContainerImage');
     }
 }

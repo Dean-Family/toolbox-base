@@ -16,6 +16,6 @@ export class ToolboxBaseStack extends cdk.Stack {
         commands: ['npm ci', 'npm run build', 'npx cdk synth']
       })
     });
-    pipeline.addStage(new ToolboxBaseEcrStage(this, "test"));
+    pipeline.addStage(new ToolboxBaseEcrStage(this, "ToolboxBase"));
   }
 }
