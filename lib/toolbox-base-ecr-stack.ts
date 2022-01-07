@@ -7,7 +7,6 @@ export class ToolboxBaseEcrStack extends cdk.Stack {
     constructor(scope: Construct, id: string, props?: cdk.StackProps) {
       super(scope, id, props);
   
-      //new Repository(this, 'ContainerImage');
       new DockerImageAsset(this, 'ContainerImage', {
         directory: path.join(__dirname, 'container')
       });
